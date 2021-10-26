@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/EtRoutineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter new Routine name "
+            />
+        <EditText
+            android:id="@+id/EtRoutineDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Routine Description "
+            android:layout_below="@+id/EtRoutineName"
+            />
+        <EditText
+            android:id="@+id/EtRoutineQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Routine Quantity "
+            android:layout_below="@+id/EtRoutineDesc"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/BtnAdd"
+            android:layout_below="@+id/EtRoutineQuantity"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/BtnAdd"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
